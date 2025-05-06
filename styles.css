@@ -1,0 +1,139 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9eff5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Header Moderno */
+.modern-header {
+  background: linear-gradient(135deg, #ff6a6a, #ffc371);
+  padding: 3rem 1rem;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.header-card {
+  background: white;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.header-card:hover {
+  transform: scale(1.01);
+}
+
+.profile-wrapper {
+  width: 150px;
+  height: 150px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #ff6a6a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.info h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #d61c1c;
+}
+
+.info a {
+  color: #d61c1c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo Juego de Acertijos */
+.game-section {
+  background: linear-gradient(to right, #f6d365, #fda085);
+  color: #333;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.game-section input {
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: none;
+  margin: 1rem 0;
+  width: 80%;
+  max-width: 400px;
+}
+
+.game-section button {
+  padding: 0.6rem 1.2rem;
+  background-color: #ff6a6a;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.game-section button:hover {
+  background-color: #e65252;
+}
+
+#feedback {
+  margin-top: 1rem;
+  font-weight: bold;
+}
